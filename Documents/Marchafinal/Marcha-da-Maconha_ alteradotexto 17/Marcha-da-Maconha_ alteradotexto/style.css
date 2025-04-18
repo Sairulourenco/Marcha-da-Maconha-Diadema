@@ -179,17 +179,17 @@ body {
     transition: color 0.3s ease; /* Transição suave para cor */
 }
 
-/* Estilo do texto que está inicialmente oculto */
+/* Estilo do texto inicialmente oculto */
 .paragrafo p.conteudo {
     display: none; /* Começa oculto */
     font-size: 16px;
     line-height: 1.5;
     color: #555;
-    border-radius: 8px;  /* Arredonda as bordas do parágrafo */
-    padding: 10px;       /* Adiciona padding ao parágrafo */
+    border-radius: 8px;  
+    padding: 10px;      
     background-color: #f0f0f0; /* Cor de fundo suave para o parágrafo */
-    border-radius: 8px;      /* Arredonda as bordas do título */
-    padding: 10px;           /* Adiciona um pouco de padding para o título */
+    border-radius: 8px;     
+    padding: 10px;           
 }
 
 /* Quando o mouse passar sobre o título */
@@ -202,10 +202,10 @@ p{
     background-color: #ffee00;
     text-align: justify;
     font-size: 19px;
-    max-width: 800px; /* Limita a largura do conteúdo */
-    margin: 0 auto;   /* Centraliza o conteúdo horizontalmente */
-    padding: 20px;    /* Adiciona um pouco de espaçamento interno */
-    border-radius: 8px;  /* Arredonda as bordas do parágrafo */
+    max-width: 800px; 
+    margin: 0 auto;   
+    padding: 20px;    /* Adiciona um pouco de espaço */
+    border-radius: 8px;  /* Arredonda*/
  }
  .paragrafo {
     font-family: Arial, sans-serif;
@@ -214,26 +214,26 @@ p{
     text-align: justify;
     font-size: 19vw;
     width:99%;
-    max-width: 800px; /* Limita a largura do conteúdo */
-    margin: 0 auto;   /* Centraliza o conteúdo horizontalmente */
-    padding: 20px;    /* Adiciona um pouco de espaçamento interno */
-    border-radius: 8px;  /* Arredonda as bordas do parágrafo */
+    max-width: 800px; 
+    margin: 0 auto;   
+    padding: 20px;    /* Adiciona um pouco de espaço */
+    border-radius: 8px;  
  }
 
  
  .container-completo {
     display: flex;
     justify-content: space-between; /* Espaçamento entre as imagens e o conteúdo */
-    align-items: center; /* Alinha as imagens e o texto no centro verticalmente */
-    gap: 40px; /* Espaço entre o conteúdo e as imagens */
+    align-items: center; /* Alinha centro verticalmente */
+    gap: 40px; /* Espaço entre as imagens */
     padding: 40px;
   }
   
   .imagem-lateral {
-    width: 250px; /* Definindo um tamanho fixo para as imagens */
+    width: 250px; /* tamanho da imagem */
     height: auto;
     object-fit: contain;
-    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    max-width: 100%; /* pra não ultrapassar a largura */
   }
 
   .fundos {
@@ -280,17 +280,45 @@ p{
   
   .botao-fumar {
     background-color: #4CAF50;
-    color: white;
+    color: #333;
     padding: 12px 18px;
     text-decoration: none;
     border-radius: 8px;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    background-color: rgba(173, 255, 47, 0.85);
   }
   
   .botao-fumar:hover {
     background-color: #388e3c;
   }
+
+  
+  .rodape-final {
+    color: #333;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .rodape-final p {
+    margin: 0;
+    line-height: 1.5;
+  }
+  
+  .link-email {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .link-email:hover {
+    text-decoration: underline;
+  }
+  
+  
   
 
   
