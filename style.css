@@ -13,6 +13,7 @@ h4{
     font-size: 20px;
     margin-top: 15px;
     width: 99%;
+    border-radius: 10px;
    }
 table {
     width: 100%;
@@ -42,6 +43,7 @@ td {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 .carousel-container figure {
     text-align: center;
@@ -54,7 +56,7 @@ td {
 .carousel-container2 {
     display: flex;
     justify-content: space-around;
-    margin-top: 40px;
+    margin-top: 25px;
     gap: 10px;
     width: 99%;
 }
@@ -70,6 +72,7 @@ figcaption{
     font-style: italic;
     background-color: #ffee00;
     margin-top: 15px;
+    border-radius: 10px;
 }
 .carousel-container2 img:hover {
     transform: scale(1.05);
@@ -100,34 +103,25 @@ body {
     background-image: url('./papel\ parede.jpg');
     opacity: 0,0,5;
 }
-p{
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #ffee00;
-    text-align: justify;
-    font-size: 19px;
- }
- .paragrafo {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #ffee00;
-    text-align: justify;
-    font-size: 19vw;
-    width:99%;
- }
+
  .agradecimento {
   text-align: center;
   justify-content: center;
   display: flex;
   font-family: Arial, sans-serif;
   margin-top: 25px;
- }
+  margin-bottom: 25px;
+  border-radius: 99px;
+} 
+
  .manifesto {
   text-align: center;
   justify-content: center;
   display: flex;
   font-style: italic;
   width: 99%;
+  border-radius: 20px;
+  margin-top: 25px;
 }
  .batalha {
         text-align: center;
@@ -135,6 +129,7 @@ p{
         display: flex;
         font-style: italic;
         width: 99%;
+        border-radius: 8px;
  }
  .carousel-control-next {
     background-color: #ffee00;
@@ -173,3 +168,158 @@ p{
     transform: scale(1.05);
     transition: transform 0.3s;
  }
+
+ /* Estilo dos títulos */
+.paragrafo h2.titulo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+    cursor: pointer; /* Muda o cursor para indicar que é interativo */
+    transition: color 0.3s ease; /* Transição suave para cor */
+}
+
+/* Estilo do texto inicialmente oculto */
+.paragrafo p.conteudo {
+    display: none; /* Começa oculto */
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+    border-radius: 8px;  
+    padding: 10px;      
+    background-color: #f0f0f0; /* Cor de fundo suave para o parágrafo */
+    border-radius: 8px;     
+    padding: 10px;           
+}
+
+/* Quando o mouse passar sobre o título */
+.paragrafo h2.titulo:hover {
+    color: #007bff; /* Muda a cor do título quando hover */
+}
+p{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #ffee00;
+    text-align: justify;
+    font-size: 19px;
+    max-width: 800px; 
+    margin: 0 auto;   
+    padding: 20px;    /* Adiciona um pouco de espaço */
+    border-radius: 8px;  /* Arredonda*/
+ }
+ .paragrafo {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #ffee00;
+    text-align: justify;
+    font-size: 19vw;
+    width:99%;
+    max-width: 800px; 
+    margin: 0 auto;   
+    padding: 20px;    /* Adiciona um pouco de espaço */
+    border-radius: 8px;  
+ }
+
+ 
+ .container-completo {
+    display: flex;
+    justify-content: space-between; /* Espaçamento entre as imagens e o conteúdo */
+    align-items: center; /* Alinha centro verticalmente */
+    gap: 40px; /* Espaço entre as imagens */
+    padding: 40px;
+  }
+  
+  .imagem-lateral {
+    width: 250px; /* tamanho da imagem */
+    height: auto;
+    object-fit: contain;
+    max-width: 100%; /* pra não ultrapassar a largura */
+  }
+
+  .fundos {
+    border-radius: 50px;
+    margin-top: 25px;
+  }
+
+  
+ 
+  .info-download {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 20px;
+  }
+  
+  .texto {
+    flex: 2;
+    min-width: 250px;
+  }
+  
+  .texto p {
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  
+  .lado-direito {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .imagem-manual {
+    width: 100%;
+    max-width: 300px;
+    height: 225px;
+    margin-bottom: 10px;
+  }
+  
+  .botao-fumar {
+    background-color: #4CAF50;
+    color: #333;
+    padding: 12px 18px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    background-color: rgba(173, 255, 47, 0.85);
+  }
+  
+  .botao-fumar:hover {
+    background-color: #388e3c;
+  }
+
+  
+  .rodape-final {
+    color: #333;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .rodape-final p {
+    margin: 0;
+    line-height: 1.5;
+  }
+  
+  .link-email {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .link-email:hover {
+    text-decoration: underline;
+  }
+  
+  
+  
+
+  
+  
