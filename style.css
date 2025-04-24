@@ -1,10 +1,11 @@
 #dov{
     display: flex;
     justify-content: center;
+    display: block;
 }
 #dov{
-    height: 40vh;
-    width: 99%;
+  max-width: 100%;
+  height: auto;
 }
 h4{
     font-family: Arial, sans-serif;
@@ -93,15 +94,15 @@ figcaption{
 * {
  margin: 0;
  padding: 0;
- box-sizing: 0;
+ box-sizing: border-box;
  
 }
 
 body {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh; 
     background-image: url('./papel\ parede.jpg');
-    opacity: 0,0,5;
+    background-position: center;    
 }
 
  .agradecimento {
@@ -317,9 +318,25 @@ p{
   .link-email:hover {
     text-decoration: underline;
   }
-  
-  
-  
 
+  @media (max-width: 768px) {
+    .container-completo {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      gap: 20px;
+    }
   
+    .imagem-lateral {
+      width: 90%;
+      max-width: 300px;
+      height: auto;
+    }
+  
+    .paragrafo {
+      font-size: 16px;
+      padding: 10px;
+      text-align: justify;
+    }
+  }
   
